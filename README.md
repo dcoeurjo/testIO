@@ -13,3 +13,10 @@
 </script>
 
 <div class="three_viewer" three_json="pointset_test.json" three_shadow="false" three_origin="5,5,5" three_scale=".2"></div>
+
+
+<ul>
+<li>blam</li>
+<li>blam</li>
+<li>blam</li>
+</ul>
