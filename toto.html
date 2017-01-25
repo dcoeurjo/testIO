@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>three viewer tests</title>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                background-color: #fff;
+            }
+            div.three_viewer {
+                display: block;
+                width: 800px;
+                height: 600px;
+                margin: auto;
+                padding: 0px;
+            }
+            canvas {
+                display: block;
+                padding: 0px;
+                margin: auto;
+            }
+        </style>
+
+        <script type="text/javascript" src="three.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="three_viewer.js"></script>
+    </head>
     <body>
-      <script type="text/javascript" src="three.js"></script>
-      <script type="text/javascript" src="jquery.min.js"></script>
-      <script type="text/javascript" src="three_viewer.js"></script>
-      <div class="three_viewer" three_json="pointset_test.json" three_shadow="false" three_origin="5,5,5" three_scale=".2"></div>
+        <h1>View DGtal OBJ in browser using three.js</h1>
+        <h3>&lt;div class=&quot;three_viewer&quot; three_json=&quot;pointset_test.json&quot; three_shadow=&quot;false&quot; three_origin=&quot;5,5,5&quot; three_scale=&quot;.2&quot;&gt;&lt;/div&gt;</h3>
+        <div class="three_viewer" three_json="pointset_test.json" three_shadow="false" three_origin="5,5,5" three_scale=".2"></div>
     </body>
 </html>
