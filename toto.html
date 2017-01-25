@@ -1,50 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>three viewer tests</title>
-        <style type="text/css">
-            body {
-                font-family: sans-serif;
-                background-color: #fff;
-            }
-            div.three_viewer {
-                display: block;
-                width: 800px;
-                height: 600px;
-                margin: auto;
-                padding: 0px;
-            }
-            canvas {
-                display: block;
-                padding: 0px;
-                margin: auto;
-            }
-        </style>
-
-        <script type="text/javascript" src="three.js"></script>
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="three_viewer.js"></script>
-    </head>
     <body>
-        <h1>View DGtal OBJ in browser using three.js</h1>
-        <ol>
-            <li>Generate OBJ files using Board3D (see dgtal_export_test.cpp for an example).</li>
-            <li>Convert OBJ files into three.js format using convert_obj_three.py (can be found in this directory).</li>
-            <li>Include the following scripts in the header.
-            <p>
-            &lt;script type=&quot;text/javascript&quot; src=&quot;three.js&quot;&gt;&lt;/script&gt;<br/>
-            &lt;script type=&quot;text/javascript&quot; src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;<br/>
-            &lt;script type=&quot;text/javascript&quot; src=&quot;three_viewer.js&quot;&gt;&lt;/script&gt;<br/>
-            </p></li>
-            <li>Add a div for each viewer. Filename, origin and scale are customizable using attributes.</li>
-            <li>Works in a <a href="reveal.html">Reveal.js presentation</a></li>
-            <li>...</li>
-            <li>Profit</li>
-        </ol>
-        <h3>&lt;div class=&quot;three_viewer&quot; three_json=&quot;kspace_test.json&quot;&gt;&lt;/div&gt;</h3>
-        <div class="three_viewer" three_json="kspace_test.json"></div>
-        <h3>&lt;div class=&quot;three_viewer&quot; three_json=&quot;pointset_test.json&quot; three_shadow=&quot;false&quot; three_origin=&quot;5,5,5&quot; three_scale=&quot;.2&quot;&gt;&lt;/div&gt;</h3>
-        <div class="three_viewer" three_json="pointset_test.json" three_shadow="false" three_origin="5,5,5" three_scale=".2"></div>
+      <script type="text/javascript" src="three.js"></script>
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <script type="text/javascript" src="three_viewer.js"></script>
+      <div class="three_viewer" three_json="pointset_test.json" three_shadow="false" three_origin="5,5,5" three_scale=".2"></div>
     </body>
 </html>
